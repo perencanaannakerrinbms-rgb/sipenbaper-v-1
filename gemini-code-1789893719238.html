@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIPENBAPER - Dinnakerin Kab. Banyumas</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0B2545',
+                            blue: '#134074',
+                            accent: '#0077B6',
+                            light: '#EEF4F8',
+                            gold: '#D4AF37'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Top Bar Header -->
+    <div class="bg-brand-navy text-white text-xs py-2 px-4 border-b border-blue-900/50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-building-flag text-brand-gold"></i>
+                <span class="font-medium">Pemerintah Kabupaten Banyumas — Dinas Tenaga Kerja dan Perindustrian</span>
+            </div>
+            <div class="hidden sm:flex items-center space-x-4">
+                <span><i class="fa-solid fa-calendar-alt text-blue-300 mr-1"></i> T.A. 2026</span>
+                <span><i class="fa-solid fa-shield-halved text-green-400 mr-1"></i> Kepbup No. 165/2026</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo & Brand -->
+                <a href="#beranda" class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center font-bold text-xl shadow-lg border border-blue-800">
+                        <i class="fa-solid fa-boxes-packing text-brand-gold"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-extrabold tracking-tight text-brand-navy block leading-none">
+                            SIPENBAPER<span class="text-brand-accent">2026</span>
+                        </span>
+                        <span class="text-xs text-gray-500 font-medium">Sistem Pencatatan Barang Persediaan</span>
+                    </div>
+                </a>
+
+                <!-- Nav Links Desktop -->
+                <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-700">
+                    <a href="#beranda" class="text-brand-accent hover:text-brand-navy transition-colors">Beranda</a>
+                    <a href="#layanan" class="hover:text-brand-accent transition-colors">Layanan Utama</a>
+                    <a href="#tentang" class="hover:text-brand-accent transition-colors">Tentang Inovasi</a>
+                    <a href="#panduan" class="hover:text-brand-accent transition-colors">Panduan</a>
+                    <a href="#kontak" class="hover:text-brand-accent transition-colors">Kontak</a>
+                </div>
+
+                <!-- Right Action Button (Direct Link to Entry Form) -->
+                <div class="hidden md:block">
+                    <a href="https://sites.google.com/view/2026sipenbaper-dinnakerin/input-persediaan-masuk" target="_blank" rel="noopener noreferrer" class="bg-brand-navy hover:bg-brand-blue text-white px-5 py-2.5 rounded-lg font-semibold text-sm shadow-md transition-all duration-200 flex items-center space-x-2">
+                        <i class="fa-solid fa-right-to-bracket text-xs"></i>
+                        <span>Input Barang</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative bg-gradient-to-br from-brand-navy via-brand-blue to-slate-900 text-white py-20 px-4 overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center space-x-2 bg-blue-500/20 text-blue-200 px-3 py-1.5 rounded-full text-xs font-medium border border-blue-400/30">
+                    <i class="fa-solid fa-award text-yellow-400"></i>
+                    <span>Inovasi Daerah Kabupaten Banyumas</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+                    Pengelolaan Barang Persediaan Digital & Terintegrasi
+                </h1>
+                <p class="text-blue-100 text-base sm:text-lg max-w-2xl font-light">
+                    Portal resmi pencatatan dan pengelolaan barang persediaan internal Dinas Tenaga Kerja dan Perindustrian Kabupaten Banyumas. Mewujudkan administrasi yang tertib, akurat, dan transparan.
+                </p>
+
+                <!-- Direct External Link Buttons -->
+                <div class="pt-4 flex flex-wrap gap-4 justify-center lg:justify-start">
+                    <a href="https://sites.google.com/view/2026sipenbaper-dinnakerin/input-persediaan-masuk" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-xl font-bold shadow-lg transition transform hover:-translate-y-0.5 flex items-center space-x-3">
+                        <i class="fa-solid fa-boxes-stacked text-lg"></i>
+                        <span>+ Input Barang Masuk</span>
+                    </a>
+                    <a href="https://sites.google.com/view/2026sipenbaper-dinnakerin/input-persediaan-keluar" target="_blank" rel="noopener noreferrer" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3.5 rounded-xl font-bold shadow-lg transition transform hover:-translate-y-0.5 flex items-center space-x-3">
+                        <i class="fa-solid fa-hand-holding-box text-lg"></i>
+                        <span>- Input Barang Keluar</span>
+                    </a>
+                    <a href="https://sites.google.com/view/2026sipenbaper-dinnakerin/fitur-laporan-persediaan" target="_blank" rel="noopener noreferrer" class="bg-sky-600 hover:bg-sky-700 text-white px-6 py-3.5 rounded-xl font-bold shadow-lg transition transform hover:-translate-y-0.5 flex items-center space-x-3">
+                        <i class="fa-solid fa-file-invoice text-lg"></i>
+                        <span>Lihat Laporan</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stat Box -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 sm:p-8 w-full max-w-md shadow-2xl space-y-6">
+                    <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                        <div>
+                            <p class="text-xs uppercase tracking-wider text-blue-200">Status Sistem</p>
+                            <p class="text-lg font-bold text-emerald-400 flex items-center mt-1">
+                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block mr-2 animate-pulse"></span>
+                                Aktif & Terintegrasi
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-circle-check text-3xl text-emerald-400"></i>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="bg-white/5 p-4 rounded-xl border border-white/10 flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-user-shield text-brand-gold text-xl"></i>
+                                <div>
+                                    <p class="text-xs text-blue-200">Pengelola Inovasi</p>
+                                    <p class="text-sm font-semibold">Subbag Umum & Kepegawaian</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white/5 p-4 rounded-xl border border-white/10 flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-file-contract text-brand-gold text-xl"></i>
+                                <div>
+                                    <p class="text-xs text-blue-200">Landasan Hukum</p>
+                                    <p class="text-sm font-semibold">Keputusan Bupati No. 165 Tahun 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center pt-2">
+                        <span class="text-xs text-blue-200">Dinnakerin Kabupaten Banyumas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: LAYANAN UTAMA -->
+    <section id="layanan" class="py-16 px-4 max-w-7xl mx-auto w-full">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="text-xs font-bold text-brand-accent uppercase tracking-wider mb-2">Akses Cepat</h2>
+            <p class="text-3xl font-extrabold text-brand-navy">Layanan Utama SIPENBAPER</p>
+            <p class="text-gray-600 mt-2">Pilih menu layanan di bawah ini sesuai dengan kebutuhan transaksi persediaan Anda.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-lg hover:shadow-xl transition-all flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-box-archive"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Persediaan Masuk</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Pencatatan barang persediaan baru berdasarkan nota penerimaan, pengadaan, atau hibah masuk ke dalam gudang dinas.</p>
+                </div>
+                <a href="PASTE_LINK_FORM_MASUK_DI_SINI" target="_blank" rel="noopener noreferrer" class="w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-bold py-3 rounded-xl border border-emerald-200 transition text-sm flex items-center justify-center space-x-2">
+                    <span>Input Barang Masuk</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-lg hover:shadow-xl transition-all flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-dolly"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Persediaan Keluar</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Formulir pengeluaran dan distribusi barang persediaan untuk kebutuhan operasional bidang atau bagian internal.</p>
+                </div>
+                <a href="PASTE_LINK_FORM_KELUAR_DI_SINI" target="_blank" rel="noopener noreferrer" class="w-full bg-amber-50 hover:bg-amber-100 text-amber-700 font-bold py-3 rounded-xl border border-amber-200 transition text-sm flex items-center justify-center space-x-2">
+                    <span>Input Barang Keluar</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-lg hover:shadow-xl transition-all flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Laporan & Rekapitulasi</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Akses rekapitulasi data saldo persediaan akhir, mutasi barang per bidang, dan dokumentasi pertanggungjawaban.</p>
+                </div>
+                <a href="PASTE_LINK_LAPORAN_DI_SINI" target="_blank" rel="noopener noreferrer" class="w-full bg-sky-50 hover:bg-sky-100 text-sky-700 font-bold py-3 rounded-xl border border-sky-200 transition text-sm flex items-center justify-center space-x-2">
+                    <span>Buka Laporan Persediaan</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: TENTANG INOVASI -->
+    <section id="tentang" class="py-16 bg-gradient-to-b from-gray-50 to-blue-50/50 border-y border-gray-200/60 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 space-y-6">
+                <div class="inline-block bg-brand-light text-brand-blue font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider">
+                    Latar Belakang & Tujuan
+                </div>
+                <h2 class="text-3xl font-extrabold text-brand-navy leading-tight">
+                    Inovasi Digitalisasi Pencatatan Barang Persediaan (SIPENBAPER)
+                </h2>
+                <p class="text-gray-600 leading-relaxed">
+                    <strong>SIPENBAPER</strong> diciptakan untuk mentransformasi tata kelola pencatatan barang persediaan dari sistem konvensional menuju sistem digital yang terintegrasi.
+                </p>
+
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center flex-shrink-0 mt-1 font-bold">1</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Tertib Administrasi</h4>
+                            <p class="text-sm text-gray-600">Menjamin seluruh arus masuk dan keluar barang persediaan terdata secara otomatis dan akurat.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center flex-shrink-0 mt-1 font-bold">2</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Efisien & Transparan</h4>
+                            <p class="text-sm text-gray-600">Memudahkan monitoring stok fisik secara *real-time* oleh admin maupun operator bidang.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center flex-shrink-0 mt-1 font-bold">3</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Legalitas Terjamin</h4>
+                            <p class="text-sm text-gray-600">Diakomodir dan dikuatkan berdasarkan Keputusan Bupati Banyumas Nomor 165 Tahun 2026 tentang Inovasi Daerah.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Info Panel -->
+            <div class="lg:col-span-6 bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+                <h3 class="text-lg font-bold text-brand-navy mb-4 border-b pb-3 flex items-center justify-between">
+                    <span><i class="fa-solid fa-circle-info text-brand-accent mr-2"></i> Detail Inovasi Daerah</span>
+                    <span class="text-xs bg-blue-100 text-blue-800 font-semibold px-2.5 py-0.5 rounded">T.A. 2026</span>
+                </h3>
+
+                <div class="space-y-4 text-sm">
+                    <div>
+                        <span class="text-gray-500 block text-xs">Instansi Pemilik</span>
+                        <span class="font-semibold text-gray-800">Dinas Tenaga Kerja dan Perindustrian Kabupaten Banyumas</span>
+                    </div>
+                    <div>
+                        <span class="text-gray-500 block text-xs">Unit Pengelola</span>
+                        <span class="font-semibold text-gray-800">Subbagian Umum dan Kepegawaian</span>
+                    </div>
+                    <div>
+                        <span class="text-gray-500 block text-xs">Inovator / Penyusun Utama</span>
+                        <span class="font-semibold text-gray-800">Sri Haryani, S.E. (Kepala Sub Bagian Umum dan Kepegawaian)</span>
+                    </div>
+                    <div>
+                        <span class="text-gray-500 block text-xs">Mitra Pendamping Teknis & Infrastruktur</span>
+                        <span class="font-semibold text-gray-800">Dinas Komunikasi dan Informatika Kabupaten Banyumas</span>
+                    </div>
+                    <div class="pt-2">
+                        <div class="bg-emerald-50 text-emerald-800 p-3 rounded-lg border border-emerald-200 text-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-check-circle text-emerald-600 text-base"></i>
+                            <span>Aplikasi dikelola penuh secara berkelanjutan oleh petugas internal Dinnakerin Banyumas.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: PANDUAN PENGOPSIAN -->
+    <section id="panduan" class="py-16 px-4 max-w-7xl mx-auto w-full">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="text-xs font-bold text-brand-accent uppercase tracking-wider mb-2">Petunjuk Penggunaan</h2>
+            <p class="text-3xl font-extrabold text-brand-navy">3 Langkah Mudah Pengoperasian</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center space-y-4">
+                <div class="w-12 h-12 bg-brand-navy text-white font-bold text-xl rounded-full flex items-center justify-center mx-auto shadow-md">1</div>
+                <h4 class="font-bold text-lg text-gray-900">Akses Portal</h4>
+                <p class="text-sm text-gray-600 leading-relaxed">Buka link portal SIPENBAPER. Pastikan Anda telah memiliki hak akses sebagai Operator Bidang / Bagian di Dinnakerin.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center space-y-4">
+                <div class="w-12 h-12 bg-brand-blue text-white font-bold text-xl rounded-full flex items-center justify-center mx-auto shadow-md">2</div>
+                <h4 class="font-bold text-lg text-gray-900">Input Data Persediaan</h4>
+                <p class="text-sm text-gray-600 leading-relaxed">Pilih menu **Input Masuk** atau **Input Keluar**, lalu isi formulir elektronik sesuai dengan nota transaksi barang secara akurat.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center space-y-4">
+                <div class="w-12 h-12 bg-brand-accent text-white font-bold text-xl rounded-full flex items-center justify-center mx-auto shadow-md">3</div>
+                <h4 class="font-bold text-lg text-gray-900">Verifikasi & Laporan</h4>
+                <p class="text-sm text-gray-600 leading-relaxed">Bukti transaksi akan terkirim secara otomatis. Anda dapat langsung memantau saldo akhir persediaan pada menu Laporan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: KONTAK & BANTUAN -->
+    <section id="kontak" class="py-16 bg-brand-navy text-white px-4 mt-auto">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-brand-accent rounded-lg flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-headset text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Layanan Pendampingan Teknis</h3>
+                    </div>
+                    <p class="text-blue-200 text-sm leading-relaxed">Jika Anda mengalami kendala teknis dalam penginputan data persediaan atau memerlukan hak akses operator, silakan hubungi Petugas Internal Subbagian Umum dan Kepegawaian Dinnakerin Banyumas:</p>
+                    <div class="pt-2 text-xs text-blue-300 space-y-1">
+                        <p><i class="fa-solid fa-location-dot mr-2"></i> Jl. S. Parman No. 24 Purwokerto, Jawa Tengah</p>
+                        <p><i class="fa-solid fa-envelope mr-2"></i> dinnakerin@banyumaskab.go.id</p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/10 flex flex-col justify-between hover:bg-white/15 transition">
+                        <div>
+                            <span class="text-xs text-blue-300 font-semibold uppercase">Petugas Internal Subbag Umum</span>
+                            <h4 class="font-bold text-white text-lg mt-1">Sdr. Akhsin</h4>
+                            <p class="text-xs text-blue-200 mt-1">Pendampingan & Pemeliharaan Aplikasi</p>
+                        </div>
+                        <a href="https://wa.me/6281329299699" target="_blank" rel="noopener noreferrer" class="mt-4 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center space-x-2 transition shadow">
+                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                            <span>0813-2929-9699</span>
+                        </a>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/10 flex flex-col justify-between hover:bg-white/15 transition">
+                        <div>
+                            <span class="text-xs text-blue-300 font-semibold uppercase">Petugas Internal Subbag Umum</span>
+                            <h4 class="font-bold text-white text-lg mt-1">Sdr. Fatur</h4>
+                            <p class="text-xs text-blue-200 mt-1">Pendampingan & Pemeliharaan Aplikasi</p>
+                        </div>
+                        <a href="https://wa.me/6289665782898" target="_blank" rel="noopener noreferrer" class="mt-4 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center space-x-2 transition shadow">
+                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                            <span>0896-6578-2898</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-blue-900/80 mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-blue-300 space-y-2 sm:space-y-0">
+                <p>&copy; 2026 SIPENBAPER — Dinas Tenaga Kerja dan Perindustrian Kab. Banyumas.</p>
+                <p>Dikembangkan bersama Dinkominfo Kabupaten Banyumas.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
